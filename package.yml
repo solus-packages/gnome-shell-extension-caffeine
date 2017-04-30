@@ -1,9 +1,9 @@
 name       : gnome-shell-extension-caffeine
 version    : 0.0.1
-release    : 1
+release    : 2
 source     :
     - git|https://github.com/eonpatapon/gnome-shell-extension-caffeine.git : 105232165f61387f9462b7c79abe2e3625a2fc73
-license    : GPL-3.0
+license    : GPL-2.0
 component  : desktop.gnome
 summary    : Disable screensaver and auto suspend
 description: |

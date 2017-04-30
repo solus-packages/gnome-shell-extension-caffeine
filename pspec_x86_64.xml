@@ -5,7 +5,7 @@
             <Name>Ikey Doherty</Name>
             <Email>ikey@solus-project.com</Email>
         </Packager>
-        <License>GPL-3.0</License>
+        <License>GPL-2.0</License>
         <PartOf>desktop.gnome</PartOf>
         <Summary xml:lang="en">Disable screensaver and auto suspend</Summary>
         <Description xml:lang="en">Disable screensaver and auto suspend
@@ -30,7 +30,7 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2017-04-30</Date>
             <Version>0.0.1</Version>
             <Comment>Packaging update</Comment>
