@@ -1,0 +1,33 @@
+name       : gnome-shell-extension-caffeine
+version    : 0.0.1
+release    : 1
+source     :
+    - git|https://github.com/eonpatapon/gnome-shell-extension-caffeine.git : 105232165f61387f9462b7c79abe2e3625a2fc73
+license    : GPL-3.0
+component  : desktop.gnome
+summary    : Disable screensaver and auto suspend
+description: |
+    Disable screensaver and auto suspend
+rundeps    :
+    - gnome-shell
+setup      : |
+    ./update-locale.sh
+install    : |
+    EXTENSION_ID="caffeine@patapon.info"
+
+    # Install the target files
+    install -D -d -m 00755 $installdir/usr/share/gnome-shell/extensions
+    cp -Ra "${EXTENSION_ID}" $installdir/usr/share/gnome-shell/extensions/.
+
+    # Install schemas globally
+    install -D -d -m 00755 $installdir/usr/share/glib-2.0
+
+    TGTDIR="$installdir/usr/share/gnome-shell/extensions/${EXTENSION_ID}"
+    
+    # Move schemas and locales
+    mv "$TGTDIR/schemas" $installdir/usr/share/glib-2.0/.
+    mv "$TGTDIR/locale" $installdir/usr/share/.
+
+    # Fix permissions
+    find $installdir -type f | xargs -I{} chmod -v 00644 {}
+    find $installdir -type d | xargs -I{} chmod -v 00755 {}

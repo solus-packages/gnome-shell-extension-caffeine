@@ -1,0 +1,41 @@
+<PISI>
+    <Source>
+        <Name>gnome-shell-extension-caffeine</Name>
+        <Packager>
+            <Name>Ikey Doherty</Name>
+            <Email>ikey@solus-project.com</Email>
+        </Packager>
+        <License>GPL-3.0</License>
+        <PartOf>desktop.gnome</PartOf>
+        <Summary xml:lang="en">Disable screensaver and auto suspend</Summary>
+        <Description xml:lang="en">Disable screensaver and auto suspend
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>gnome-shell-extension-caffeine</Name>
+        <Summary xml:lang="en">Disable screensaver and auto suspend</Summary>
+        <Description xml:lang="en">Disable screensaver and auto suspend
+</Description>
+        <PartOf>desktop.gnome</PartOf>
+        <Files>
+            <Path fileType="data">/usr/share/glib-2.0/schemas/org.gnome.shell.extensions.caffeine.gschema.xml</Path>
+            <Path fileType="data">/usr/share/gnome-shell/extensions/caffeine@patapon.info/convenience.js</Path>
+            <Path fileType="data">/usr/share/gnome-shell/extensions/caffeine@patapon.info/extension.js</Path>
+            <Path fileType="data">/usr/share/gnome-shell/extensions/caffeine@patapon.info/icons/my-caffeine-off-symbolic.svg</Path>
+            <Path fileType="data">/usr/share/gnome-shell/extensions/caffeine@patapon.info/icons/my-caffeine-on-symbolic.svg</Path>
+            <Path fileType="data">/usr/share/gnome-shell/extensions/caffeine@patapon.info/metadata.json</Path>
+            <Path fileType="data">/usr/share/gnome-shell/extensions/caffeine@patapon.info/prefs.js</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-04-30</Date>
+            <Version>0.0.1</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Ikey Doherty</Name>
+            <Email>ikey@solus-project.com</Email>
+        </Update>
+    </History>
+</PISI>
